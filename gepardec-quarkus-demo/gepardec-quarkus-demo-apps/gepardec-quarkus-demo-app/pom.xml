@@ -12,11 +12,21 @@
     <artifactId>gepardec-quarkus-demo-app</artifactId>
     <packaging>quarkus</packaging>
 
+    <properties>
+        <quarkus-quinoa.version>2.9.2</quarkus-quinoa.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.gepardec</groupId>
             <artifactId>gepardec-quarkus-demo-bff</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.quarkiverse.quinoa</groupId>
+            <artifactId>quarkus-quinoa</artifactId>
+            <version>${quarkus-quinoa.version}</version>
         </dependency>
     </dependencies>
 

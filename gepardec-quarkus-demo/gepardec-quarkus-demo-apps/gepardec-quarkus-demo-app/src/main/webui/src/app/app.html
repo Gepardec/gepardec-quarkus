@@ -1,0 +1,9 @@
+@if (demo.isLoading()) {
+  <p>Loading...</p>
+} @else if (demo.error()) {
+  <p>Error loading demo</p>
+} @else {
+  <p>{{ demo.value() }}</p>
+}
+
+<router-outlet />
